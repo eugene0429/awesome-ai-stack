@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:pitchus.io)",
+      "Bash(git init *)",
+      "Bash(mkdir -p .claude/commands)",
+      "Bash(printf '%s\\\\n' '.DS_Store' 'node_modules/' '*.log' '.env')",
+      "Bash(git add *)",
+      "Bash(git commit -q -m ' *)"
+    ]
+  }
+}
