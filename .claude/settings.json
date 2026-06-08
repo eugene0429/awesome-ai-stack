@@ -7,7 +7,9 @@
       "Bash(mkdir -p .claude/commands)",
       "Bash(printf '%s\\\\n' '.DS_Store' 'node_modules/' '*.log' '.env')",
       "Bash(git add *)",
-      "Bash(git commit -q -m ' *)"
+      "Bash(git commit -q -m ' *)",
+      "WebFetch(domain:ai.keywert.com)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }

@@ -40,6 +40,7 @@ Tools for literature search, paper reading, academic writing, citations, and pee
 | PaperVizAgent | Google Research multi-agent framework that turns raw scientific content into publication-quality figures (Retriever/Planner/Stylist/Visualizer/Critic). | [github.com/google-research/papervizagent](https://github.com/google-research/papervizagent) | `OSS` |
 | ScholarPeer | Google Research multi-agent framework for automated peer review — produces structured reviews grounded in live literature search. | [arxiv 2601.22638](https://arxiv.org/pdf/2601.22638) | — |
 | NotebookLM | Google's AI research/notetaking tool grounded in your uploaded sources; generates summaries, FAQs, and Audio Overviews. Community Python wrappers exist. | [notebooklm.google.com](https://notebooklm.google.com) | `SaaS` `Free` |
+| Keywert Insight | AI patent-research platform (Wert Intelligence) — natural-language patent search, prior-art reports, and R&D-differentiation analysis; auto-generates invention disclosures and specs. | [ai.keywert.com](https://ai.keywert.com/) | `SaaS` |
 | Last30Days | Research agent/skill that searches Reddit, X, YouTube, HN, Polymarket, and the web over the past 30 days and synthesizes a sourced, weighted summary. | [github.com/mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | `OSS` `Skill` |
 
 ## RAG & Knowledge Management
@@ -171,6 +172,7 @@ Local machine, infrastructure, and analytics tools.
 | Mole | Free, open-source all-in-one macOS optimization toolkit — clean, uninstall, analyze, optimize, and monitor the Mac from the terminal. | [github.com/tw93/Mole](https://github.com/tw93/Mole) | `OSS` `Free` |
 | docker-android | Docker image running Android emulators with noVNC and video recording — for Android app dev and native/web/hybrid testing (Appium, Espresso). | [github.com/budtmo/docker-android](https://github.com/budtmo/docker-android) | `OSS` |
 | Clicky | Privacy-friendly real-time web analytics (Google Analytics alternative) with AI bot/traffic categorization and an MCP server. ⚠️ "heyclicky" is a separate app. | [clicky.com](https://clicky.com) | `SaaS` `⚠️` |
+| Google Workspace (gws) | Google's cloud productivity suite (Gmail, Docs, Sheets, Drive, Calendar). Listed here for its MCP/Claude integrations that let agents read and write Workspace docs. | [workspace.google.com](https://workspace.google.com) | `SaaS` |
 
 ## Curated Lists
 
@@ -180,6 +182,7 @@ Meta-resources — lists worth mining for more tools.
 |------|--------------|------|------|
 | awesome-opensource-ai | Curated list of battle-tested, production-proven, truly open-source AI projects, models, libraries, and dev tools. | [github.com/alvinreal/awesome-opensource-ai](https://github.com/alvinreal/awesome-opensource-ai) | `OSS` |
 | awesome-claude-code | Curated list of skills, hooks, slash-commands, agent orchestrators, and plugins for Claude Code. (Generic name — several competing repos.) | [github.com/hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | `OSS` |
+| awesome-design-md | Curated collection of 73+ DESIGN.md files extracted from major brand sites (Claude, Vercel, Airbnb, Tesla…). Drop one into a project so coding agents generate a matching UI. | [github.com/voltagent/awesome-design-md](https://github.com/voltagent/awesome-design-md) | `OSS` |
 
 ---
 
@@ -187,11 +190,10 @@ Meta-resources — lists worth mining for more tools.
 
 Entries from `raw.txt` that couldn't be confidently identified. Flagged, not guessed — add a URL or source and re-run `/update-tools` to resolve.
 
+_All current entries have been resolved — nothing pending._
+
 | Raw entry | Note from research |
 |-----------|--------------------|
-| Keywert insight | "Research differentiation / patent advice" — no tool found under this name. Closest spelling ("Keyword Insights") is an unrelated SEO tool, so not treated as a match. |
-| gws | No canonical named project found. Likely a "git worktree" tooling abbreviation for Claude Code, or a personal/niche tool. |
-| awesome_design.md | No repo literally named this. Best matches are curated design-skill lists like [VoltAgent/awesome-claude-design](https://github.com/VoltAgent/awesome-claude-design) or [bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills). Confirm which. |
 
 ---
 
