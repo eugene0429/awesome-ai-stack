@@ -1,6 +1,6 @@
-# oh-my-opensource
+# awesome-ai-stack
 
-A curated catalog of AI tools, open-source projects, and Claude Code skills — collected from the wild, researched, and organized.
+A curated catalog of AI tools — open-source and commercial (SaaS) — plus Claude Code skills, collected from the wild, researched, and organized.
 
 > New finds go into [`raw.txt`](raw.txt) in any format. Running the [`/update-tools`](#-how-this-catalog-is-maintained) command researches each new entry, classifies it, and appends it to the right section below. See [How this catalog is maintained](#-how-this-catalog-is-maintained).
 
