@@ -4,7 +4,7 @@ A curated catalog of AI tools — open-source and commercial (SaaS) — plus Cla
 
 > New finds go into [`raw.txt`](raw.txt) in any format. Running the [`/update-tools`](#-how-this-catalog-is-maintained) command researches each new entry, classifies it, and appends it to the right section below. See [How this catalog is maintained](#-how-this-catalog-is-maintained).
 
-**Legend** · `OSS` open source · `SaaS` commercial/hosted · `Skill` Claude Code skill or plugin · `Free` free to use · ⚠️ identity not fully verified
+**Legend** · `OSS` open source · `SaaS` commercial/hosted · `Skill` Claude Code skill or plugin · `Free` free to use
 
 ## Contents
 
@@ -21,7 +21,6 @@ A curated catalog of AI tools — open-source and commercial (SaaS) — plus Cla
 - [Datasets](#datasets)
 - [System & Dev Utilities](#system--dev-utilities)
 - [Curated Lists](#curated-lists)
-- [⚠️ Needs Verification](#️-needs-verification)
 
 ---
 
@@ -34,7 +33,7 @@ Tools for literature search, paper reading, academic writing, citations, and pee
 | Prism | OpenAI's free AI-native LaTeX editor/workspace for scientists, with GPT integrated for paper writing, citations, and collaboration. | [openai.com/prism](https://openai.com/prism/) | `SaaS` `Free` |
 | Ponder | AI research workspace for literature review and paper reading — finds relevant passages, compares sources, organizes notes in a knowledge graph. | [ponder.ing](https://ponder.ing/) | `SaaS` |
 | ThesisAI | AI academic writing assistant that drafts long-form documents with inline, verified citations; supports LaTeX/Overleaf, Zotero/Mendeley. | [thesisai.io](https://www.thesisai.io/) | `SaaS` |
-| Sci-bot | Research chatbot built on Sci-Hub's 10M+ paper corpus; retrieves, summarizes, and cites real sources. ⚠️ Tied to the legally contentious Sci-Hub. | [sci-hub.se](https://sci-hub.se/) | `⚠️` |
+| Sci-bot | AI research assistant integrating Sci-Hub's paper corpus; answers questions with real academic citations (APA/MLA/IEEE…), 10+ languages, token-based pricing. | [sci-bot.ru](https://sci-bot.ru/) | `SaaS` |
 | Liner | AI search assistant with Liner Scholar — a literature-review agent over 200M+ academic sources, citation recommender, hypothesis generator. | [liner.com](https://liner.com/) | `SaaS` `Free` |
 | AnswerThis | YC-backed research assistant; semantic search over 300M+ papers, citation-backed literature reviews with line-by-line sources and citation maps. | [answerthis.io](https://answerthis.io/) | `SaaS` |
 | PaperVizAgent | Google Research multi-agent framework that turns raw scientific content into publication-quality figures (Retriever/Planner/Stylist/Visualizer/Critic). | [github.com/google-research/papervizagent](https://github.com/google-research/papervizagent) | `OSS` |
@@ -71,7 +70,7 @@ Building, training, and orchestrating autonomous and swarm agents.
 | Tool | What it does | Link | Tags |
 |------|--------------|------|------|
 | Agent Lightning | Microsoft framework adding RL, prompt optimization, and fine-tuning to any agent with near-zero code changes; works with LangChain, AutoGen, CrewAI, etc. | [github.com/microsoft/agent-lightning](https://github.com/microsoft/agent-lightning) | `OSS` |
-| Hermes Agent | Open-source self-improving agent with a closed learning loop — writes reusable skill files, stores outcomes in memory, refines across sessions. ⚠️ Name collides with the Hermes LLM series. | [github.com/NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | `OSS` `⚠️` |
+| Hermes Agent | Open-source self-improving agent with a closed learning loop — writes reusable skill files, stores outcomes in memory, refines across sessions. | [github.com/NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | `OSS` |
 | MetaGPT | Multi-agent framework simulating a software company — roles (PM, architect, engineer) follow SOPs to turn one line into PRDs, designs, and code. | [github.com/FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT) | `OSS` |
 | MiroFish | Swarm-intelligence prediction engine spinning up thousands-to-millions of agents in parallel simulated social worlds to forecast outcomes (on CAMEL-AI OASIS). | [github.com/666ghj/MiroFish](https://github.com/666ghj/MiroFish) | `OSS` |
 | ruflo | Multi-agent meta-harness for Claude Code/Codex — coordinating agent swarms with adaptive memory, self-learning, GOAP planning, RAG, and federated comms. | [github.com/ruvnet/ruflo](https://github.com/ruvnet/ruflo) | `OSS` `Skill` |
@@ -131,9 +130,9 @@ Pitching, marketing, product management, and job-search tooling.
 | Tool | What it does | Link | Tags |
 |------|--------------|------|------|
 | Career-Ops | Job-search system on Claude Code — scans career portals, reasons about job fit vs your CV, and generates per-listing ATS-optimized resume PDFs. | [github.com/santifer/career-ops](https://github.com/santifer/career-ops) | `OSS` `Skill` |
-| marketing-skills | Collection of marketing skills for Claude Code/AI agents — CRO, copywriting, SEO, analytics, growth engineering. ⚠️ Generic name; several similar repos exist. | [github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | `OSS` `Skill` `⚠️` |
-| pm-skills | Claude Code skills for product managers — PRD critique, discovery interviews, roadmap planning, prioritization, metrics diagnosis. ⚠️ Generic name; several candidates. | [github.com/aakashg/pm-claude-skills](https://github.com/aakashg/pm-claude-skills) | `OSS` `Skill` `⚠️` |
-| pitchus | Platform for pitching a business and getting feedback from investors/founders. ⚠️ Doesn't cleanly match "AI pitch-deck builder" — verify intended tool. | [pitchus.io](https://pitchus.io/) | `⚠️` |
+| marketing-skills | Collection of marketing skills for Claude Code/AI agents — CRO, copywriting, SEO, analytics, growth engineering. | [github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | `OSS` `Skill` |
+| pm-skills | 100+ Claude Code skills/commands for product managers across the full lifecycle — discovery, strategy, PRDs/OKRs/roadmaps, market research, analytics (SQL, cohorts, A/B), and go-to-market. | [github.com/phuryn/pm-skills](https://github.com/phuryn/pm-skills) | `OSS` `Skill` |
+| PitchUs | AI tool that converts a founder's pitch deck into a US VC-ready format — restructuring and optimizing the deck to match American investor expectations. | [pitchusai.com](https://www.pitchusai.com/) | `SaaS` |
 
 ## Web Scraping & Browser Automation
 
@@ -171,7 +170,7 @@ Local machine, infrastructure, and analytics tools.
 |------|--------------|------|------|
 | Mole | Free, open-source all-in-one macOS optimization toolkit — clean, uninstall, analyze, optimize, and monitor the Mac from the terminal. | [github.com/tw93/Mole](https://github.com/tw93/Mole) | `OSS` `Free` |
 | docker-android | Docker image running Android emulators with noVNC and video recording — for Android app dev and native/web/hybrid testing (Appium, Espresso). | [github.com/budtmo/docker-android](https://github.com/budtmo/docker-android) | `OSS` |
-| Clicky | Privacy-friendly real-time web analytics (Google Analytics alternative) with AI bot/traffic categorization and an MCP server. ⚠️ "heyclicky" is a separate app. | [clicky.com](https://clicky.com) | `SaaS` `⚠️` |
+| Clicky | Open-source macOS menu-bar AI teaching assistant — sees your screen, takes push-to-talk voice, and points its cursor at on-screen UI elements to guide you through tasks. Built on Claude + AssemblyAI + ElevenLabs. | [github.com/farzaa/clicky](https://github.com/farzaa/clicky) | `OSS` `Free` |
 | Google Workspace (gws) | Google's cloud productivity suite (Gmail, Docs, Sheets, Drive, Calendar). Listed here for its MCP/Claude integrations that let agents read and write Workspace docs. | [workspace.google.com](https://workspace.google.com) | `SaaS` |
 
 ## Curated Lists
@@ -186,23 +185,12 @@ Meta-resources — lists worth mining for more tools.
 
 ---
 
-## ⚠️ Needs Verification
-
-Entries from `raw.txt` that couldn't be confidently identified. Flagged, not guessed — add a URL or source and re-run `/update-tools` to resolve.
-
-_All current entries have been resolved — nothing pending._
-
-| Raw entry | Note from research |
-|-----------|--------------------|
-
----
-
 ## 🔄 How this catalog is maintained
 
 This catalog auto-updates from `raw.txt` via a Claude Code slash command.
 
 1. **Drop new finds into [`raw.txt`](raw.txt)** — any format, one per line, partial names are fine.
 2. **Run `/update-tools`** in Claude Code from this directory.
-3. The command reads `raw.txt` and this `README.md`, figures out which entries are **not yet catalogued** (so it's safe to re-run), **web-researches** each new tool, classifies it into the scheme above, and inserts it into the right table — or into **Needs Verification** if it can't confidently identify it. It then prints a summary of what changed.
+3. The command reads `raw.txt` and this `README.md`, figures out which entries are **not yet catalogued** (so it's safe to re-run), **web-researches** each new tool, classifies it into the scheme above, and inserts it into the right table. It then prints a summary of what changed.
 
 The command definition lives in [`.claude/commands/update-tools.md`](.claude/commands/update-tools.md).
