@@ -51,6 +51,7 @@ Frameworks that turn documents, code, or media into queryable knowledge.
 | RAG-Anything | All-in-one multimodal RAG framework retrieving across text, images, tables, and equations via dual-graph construction and cross-modal hybrid retrieval. | [github.com/HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything) | `OSS` |
 | Understand-Anything | Multi-agent plugin that turns any codebase into an interactive, queryable knowledge graph with plain-English summaries and AI walkthroughs. | [github.com/Lum1104/Understand-Anything](https://github.com/Lum1104/Understand-Anything) | `OSS` `Skill` |
 | Graphify | Skill that turns any folder of code/docs/papers/media into a queryable knowledge graph (Tree-sitter + NetworkX + Leiden), with Obsidian-compatible output. | [github.com/safishamsi/graphify](https://github.com/safishamsi/graphify) | `OSS` `Skill` |
+| HelixDB | Open-source graph-vector database built in Rust (LMDB-backed) with a typed query language (HelixQL), combining graph traversal and vector search for RAG and agent memory. | [github.com/HelixDB/helix-db](https://github.com/HelixDB/helix-db) | `OSS` |
 
 ## LLM Optimization & Local Inference
 
@@ -74,6 +75,7 @@ Building, training, and orchestrating autonomous and swarm agents.
 | MetaGPT | Multi-agent framework simulating a software company — roles (PM, architect, engineer) follow SOPs to turn one line into PRDs, designs, and code. | [github.com/FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT) | `OSS` |
 | MiroFish | Swarm-intelligence prediction engine spinning up thousands-to-millions of agents in parallel simulated social worlds to forecast outcomes (on CAMEL-AI OASIS). | [github.com/666ghj/MiroFish](https://github.com/666ghj/MiroFish) | `OSS` |
 | ruflo | Multi-agent meta-harness for Claude Code/Codex — coordinating agent swarms with adaptive memory, self-learning, GOAP planning, RAG, and federated comms. | [github.com/ruvnet/ruflo](https://github.com/ruvnet/ruflo) | `OSS` `Skill` |
+| LLM Council | Andrej Karpathy's web app where several LLMs answer a query, anonymously peer-review each other's responses, and a "chairman" model synthesizes the final answer. | [github.com/karpathy/llm-council](https://github.com/karpathy/llm-council) | `OSS` `Free` |
 
 ## Claude Code Skills & Plugins
 
@@ -95,6 +97,10 @@ Skills, plugins, and tooling that extend Claude Code (and other AI coding agents
 | grill-me-codex | Plan-verification skill: "grills" you to lock a plan, then hands it to Codex which adversarially tears it apart over rounds until both sign off. | [github.com/chaseai-yt/grill-me-codex](https://github.com/chaseai-yt/grill-me-codex) | `OSS` `Skill` |
 | humanizer | Skill that removes signs of AI-generated writing (em-dash overuse, rule of three, AI vocabulary, etc.) based on Wikipedia's "Signs of AI writing" guide. | [github.com/blader/humanizer](https://github.com/blader/humanizer) | `OSS` `Skill` |
 | gstack | Open-source Claude Code skill pack (~23+ slash commands) turning Claude Code into an AI engineering team — CEO, designer, eng manager, QA, security; `/office-hours` gives YC-style planning. | [github.com/garrytan/gstack](https://github.com/garrytan/gstack) | `OSS` `Skill` |
+| skill-creator | Anthropic's official skill that guides you through building new Claude skills — use-case definition, frontmatter generation, packaging, and validation. | [github.com/anthropics/skills](https://github.com/anthropics/skills/tree/main/skill-creator) | `OSS` `Skill` |
+| find-skill | Skill/CLI that discovers and installs skills from many community and official sources into Claude Code, Codex, OpenCode, or Cursor, with automatic format conversion. | [github.com/fockus/claude-skill-find-skill](https://github.com/fockus/claude-skill-find-skill) | `OSS` `Skill` |
+| Caveman | Skill that compresses AI agent output ~65–75% by stripping filler, articles, and pleasantries while preserving code, paths, URLs, and technical terms (`/caveman`, lite/full/ultra modes). | [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | `OSS` `Skill` `Free` |
+| context-engineering-kit | Skill kit for managing an agent's context window — structuring prompts, curating what enters context, and improving result quality across long sessions. | [github.com/NeoLabHQ/context-engineering-kit](https://github.com/NeoLabHQ/context-engineering-kit) | `OSS` `Skill` |
 
 ## Creative & Media Generation
 
@@ -111,6 +117,7 @@ Image, video, 3D, animation, motion capture, and visual generation.
 | Manus | General-purpose autonomous AI agent; its slides module researches, structures, and designs a full PowerPoint deck from a prompt (.pptx/PDF/web). | [manus.im](https://manus.im/) | `SaaS` |
 | Higgsfield + Seedance 2.0 | Higgsfield is an AI video/image platform aggregating many models; Seedance 2.0 is ByteDance's multimodal video model (multi-shot, synced audio, lip-sync). | [higgsfield.ai](https://higgsfield.ai/) | `SaaS` |
 | LingBot-Map | Feed-forward 3D foundation model for real-time streaming scene reconstruction from a single RGB camera (~20 FPS, no LiDAR/depth). | [github.com/robbyant/lingbot-map](https://github.com/robbyant/lingbot-map) | `OSS` |
+| Remotion Skill | Agent skill teaching AI coding agents to write correct Remotion code — Remotion being the open-source React framework for making videos programmatically (React components → MP4/WebM/GIF). | [remotion.dev/docs/ai/skills](https://www.remotion.dev/docs/ai/skills) | `OSS` `Skill` |
 
 ## CAD & Engineering
 
@@ -133,6 +140,9 @@ Pitching, marketing, product management, and job-search tooling.
 | marketing-skills | Collection of marketing skills for Claude Code/AI agents — CRO, copywriting, SEO, analytics, growth engineering. | [github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | `OSS` `Skill` |
 | pm-skills | 100+ Claude Code skills/commands for product managers across the full lifecycle — discovery, strategy, PRDs/OKRs/roadmaps, market research, analytics (SQL, cohorts, A/B), and go-to-market. | [github.com/phuryn/pm-skills](https://github.com/phuryn/pm-skills) | `OSS` `Skill` |
 | PitchUs | AI tool that converts a founder's pitch deck into a US VC-ready format — restructuring and optimizing the deck to match American investor expectations. | [pitchusai.com](https://www.pitchusai.com/) | `SaaS` |
+| competitive-ads-extractor | Skill that extracts and analyzes competitors' ads from ad libraries (Meta Ad Library, Google Ads Transparency, LinkedIn) — screenshots, messaging/value-prop analysis, theme categorization, and pattern detection. | [github.com/ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/competitive-ads-extractor) | `OSS` `Skill` |
+| ads-meta | Claude skill (part of the claude-ads pack) running a ~50-point audit of Facebook/Instagram ad accounts — Pixel/CAPI setup, creative fatigue, account structure, audience targeting — with a weighted scored report. | [github.com/AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads) | `OSS` `Skill` |
+| Sandcastles.ai | AI YouTube research/ideation tool — surfaces outlier and viral videos, analyzes trends, and generates data-backed scripts and hooks for creators. | [sandcastles.ai](https://www.sandcastles.ai/) | `SaaS` |
 
 ## Web Scraping & Browser Automation
 
