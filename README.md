@@ -2,9 +2,9 @@
 
 A curated catalog of AI tools — open-source and commercial (SaaS) — plus Claude Code skills, collected from the wild, researched, and organized.
 
-> New finds go into [`raw.txt`](raw.txt) in any format. Running the [`/update-tools`](#-how-this-catalog-is-maintained) command researches each new entry, classifies it, and appends it to the right section below. See [How this catalog is maintained](#-how-this-catalog-is-maintained).
+> Paste new finds directly into the [`/update-tools`](#-how-this-catalog-is-maintained) command — any format, partial names fine. It researches each new entry, classifies it, and appends it to the right section below. See [How this catalog is maintained](#-how-this-catalog-is-maintained).
 
-**Legend** · `OSS` open source · `SaaS` commercial/hosted · `Skill` Claude Code skill or plugin · `Free` free to use
+**Legend** · `OSS` open source · `SaaS` commercial/hosted · `Skill` Claude Code skill or plugin · `Free` free to use · `⚠️` identity not fully verified
 
 ## Contents
 
@@ -19,6 +19,7 @@ A curated catalog of AI tools — open-source and commercial (SaaS) — plus Cla
 - [Web Scraping & Browser Automation](#web-scraping--browser-automation)
 - [UI / Web Design](#ui--web-design)
 - [Datasets](#datasets)
+- [Open Models](#open-models)
 - [System & Dev Utilities](#system--dev-utilities)
 - [Curated Lists](#curated-lists)
 
@@ -41,6 +42,8 @@ Tools for literature search, paper reading, academic writing, citations, and pee
 | NotebookLM | Google's AI research/notetaking tool grounded in your uploaded sources; generates summaries, FAQs, and Audio Overviews. Community Python wrappers exist. | [notebooklm.google.com](https://notebooklm.google.com) | `SaaS` `Free` |
 | Keywert Insight | AI patent-research platform (Wert Intelligence) — natural-language patent search, prior-art reports, and R&D-differentiation analysis; auto-generates invention disclosures and specs. | [ai.keywert.com](https://ai.keywert.com/) | `SaaS` |
 | Last30Days | Research agent/skill that searches Reddit, X, YouTube, HN, Polymarket, and the web over the past 30 days and synthesizes a sourced, weighted summary. | [github.com/mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | `OSS` `Skill` |
+| Apodex | Verification-first deep-research agent system orchestrating up to 150 sub-agents with fact-checker/conflict-reviewer roles and auditable evidence chains; ships Apache-2.0 open-weight models (Apodex-1.0, fine-tuned from Qwen3.5) and the AgentHarness eval harness. | [github.com/ApodexAI](https://github.com/ApodexAI) | `OSS` |
+| VERSES AI (AXIOM) | Best-guess match for raw note "Vercus (transformer replacement?)" — VERSES' Genius platform and AXIOM architecture use active inference (Free Energy Principle) as an explicit alternative to transformer-based models. Exact name "Vercus" not found; identity unconfirmed. ⚠️ | [verses.ai](https://www.verses.ai/) | `SaaS` `⚠️` |
 
 ## RAG & Knowledge Management
 
@@ -52,6 +55,7 @@ Frameworks that turn documents, code, or media into queryable knowledge.
 | Understand-Anything | Multi-agent plugin that turns any codebase into an interactive, queryable knowledge graph with plain-English summaries and AI walkthroughs. | [github.com/Lum1104/Understand-Anything](https://github.com/Lum1104/Understand-Anything) | `OSS` `Skill` |
 | Graphify | Skill that turns any folder of code/docs/papers/media into a queryable knowledge graph (Tree-sitter + NetworkX + Leiden), with Obsidian-compatible output. | [github.com/safishamsi/graphify](https://github.com/safishamsi/graphify) | `OSS` `Skill` |
 | HelixDB | Open-source graph-vector database built in Rust (LMDB-backed) with a typed query language (HelixQL), combining graph traversal and vector search for RAG and agent memory. | [github.com/HelixDB/helix-db](https://github.com/HelixDB/helix-db) | `OSS` |
+| cognee | Open-source AI memory engine giving agents persistent long-term memory — builds a self-hosted knowledge graph combining vector embeddings, graph reasoning, and ontology generation (remember/recall/forget operations). | [github.com/topoteretes/cognee](https://github.com/topoteretes/cognee) | `OSS` |
 
 ## LLM Optimization & Local Inference
 
@@ -76,6 +80,8 @@ Building, training, and orchestrating autonomous and swarm agents.
 | MiroFish | Swarm-intelligence prediction engine spinning up thousands-to-millions of agents in parallel simulated social worlds to forecast outcomes (on CAMEL-AI OASIS). | [github.com/666ghj/MiroFish](https://github.com/666ghj/MiroFish) | `OSS` |
 | ruflo | Multi-agent meta-harness for Claude Code/Codex — coordinating agent swarms with adaptive memory, self-learning, GOAP planning, RAG, and federated comms. | [github.com/ruvnet/ruflo](https://github.com/ruvnet/ruflo) | `OSS` `Skill` |
 | LLM Council | Andrej Karpathy's web app where several LLMs answer a query, anonymously peer-review each other's responses, and a "chairman" model synthesizes the final answer. | [github.com/karpathy/llm-council](https://github.com/karpathy/llm-council) | `OSS` `Free` |
+| Strix | Open-source autonomous AI penetration-testing agents that run your app, find vulnerabilities (XSS, auth bypass…), validate them with proof-of-concept exploits, and can auto-generate fix PRs; integrates with CI/CD, GitHub/GitLab, Slack/Jira. | [github.com/usestrix/strix](https://github.com/usestrix/strix) | `OSS` |
+| OpenCode | Popular open-source, provider-agnostic AI coding agent for the terminal — works with Claude, OpenAI, Google, or local models. Formerly `sst/opencode`; pairs well with open models like Nemotron 3 for fully local agent stacks. | [github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) | `OSS` `Free` |
 
 ## Claude Code Skills & Plugins
 
@@ -101,6 +107,8 @@ Skills, plugins, and tooling that extend Claude Code (and other AI coding agents
 | find-skill | Skill/CLI that discovers and installs skills from many community and official sources into Claude Code, Codex, OpenCode, or Cursor, with automatic format conversion. | [github.com/fockus/claude-skill-find-skill](https://github.com/fockus/claude-skill-find-skill) | `OSS` `Skill` |
 | Caveman | Skill that compresses AI agent output ~65–75% by stripping filler, articles, and pleasantries while preserving code, paths, URLs, and technical terms (`/caveman`, lite/full/ultra modes). | [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | `OSS` `Skill` `Free` |
 | context-engineering-kit | Skill kit for managing an agent's context window — structuring prompts, curating what enters context, and improving result quality across long sessions. | [github.com/NeoLabHQ/context-engineering-kit](https://github.com/NeoLabHQ/context-engineering-kit) | `OSS` `Skill` |
+| Ponytail | Skill/plugin that makes coding agents "think like the laziest senior dev" — a decision ladder (skip → reuse → stdlib → native → one-liner → minimal code) that cuts generated code volume (~54% fewer LOC per its benchmarks) while keeping safety guardrails. | [github.com/DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | `OSS` `Skill` |
+| obsidian-skills | Official Agent Skills for Obsidian by its CEO Steph Ango (kepano) — teaches agents the Obsidian CLI and open formats (Markdown/wikilinks, Bases, JSON Canvas) plus Defuddle web clipping; installable as a Claude Code plugin. | [github.com/kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | `OSS` `Skill` |
 
 ## Creative & Media Generation
 
@@ -143,6 +151,9 @@ Pitching, marketing, product management, and job-search tooling.
 | competitive-ads-extractor | Skill that extracts and analyzes competitors' ads from ad libraries (Meta Ad Library, Google Ads Transparency, LinkedIn) — screenshots, messaging/value-prop analysis, theme categorization, and pattern detection. | [github.com/ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/competitive-ads-extractor) | `OSS` `Skill` |
 | ads-meta | Claude skill (part of the claude-ads pack) running a ~50-point audit of Facebook/Instagram ad accounts — Pixel/CAPI setup, creative fatigue, account structure, audience targeting — with a weighted scored report. | [github.com/AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads) | `OSS` `Skill` |
 | Sandcastles.ai | AI YouTube research/ideation tool — surfaces outlier and viral videos, analyzes trends, and generates data-backed scripts and hooks for creators. | [sandcastles.ai](https://www.sandcastles.ai/) | `SaaS` |
+| ai-berkshire | Value-investing research framework of ~19 Claude Code/Codex skills systematizing the methodologies of Buffett, Munger, Duan Yongping, and Li Lu; `/investment-team` spawns 4 parallel analyst agents plus a synthesizing team lead. | [github.com/xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire) | `OSS` `Skill` |
+| Vibe-Trading | HKUDS's "personal trading agent" — an agent skill for Claude Code/Codex/ChatGPT for AI quantitative trading across crypto, stocks, and forex: market research, strategy generation, backtesting with validation artifacts, live trading, and multi-agent research swarms. | [github.com/HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) | `OSS` `Skill` |
+| Meetily | Privacy-first, self-hosted AI meeting note-taker (macOS/Windows) — live Whisper/Parakeet transcription, speaker diarization, and local LLM summarization via Ollama; 100% local, no cloud. | [github.com/Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) | `OSS` `Free` |
 
 ## Web Scraping & Browser Automation
 
@@ -165,12 +176,22 @@ Design-intelligence skills and resources for building better interfaces.
 | taste-skill | Design skill giving the agent "good taste" — DESIGN.md files that ban AI-slop patterns and enforce real typography, asymmetric layouts, tuned motion. | [github.com/Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | `OSS` `Skill` |
 | UI/UX Pro Max | Design-intelligence skill: searchable database of styles, palettes, font pairings, UX guidelines, and charts across stacks, with a CLI to generate design systems. | [github.com/nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | `OSS` `Skill` |
 | huashu-design | HTML-native design skill (inspired by Claude Design) — turns a sentence into high-fidelity prototypes, decks, animations, infographics; MP4/PPTX export. | [github.com/alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | `OSS` `Skill` |
+| ai-website-cloner-template | GitHub template that clones any website with one `/clone-website` command — screenshots the target via a browser extension, extracts design tokens/components, dispatches parallel builder agents, and reconstructs it in Next.js/React/Tailwind with diff-fixing against the original. | [github.com/JCodesMore/ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) | `OSS` `Skill` |
 
 ## Datasets
 
 | Tool | What it does | Link | Tags |
 |------|--------------|------|------|
 | The Well | 15TB collection of 16 physics-simulation datasets (fluid dynamics, MHD, acoustics, supernovae…) with a unified PyTorch interface for ML surrogate models. | [github.com/PolymathicAI/the_well](https://github.com/PolymathicAI/the_well) | `OSS` |
+
+## Open Models
+
+Open-weight models you can download, fine-tune, and run yourself — LLMs, vision models, and beyond. (Domain-specific models with one clear use case, like SAM 3D, stay in their domain section.)
+
+| Tool | What it does | Link | Tags |
+|------|--------------|------|------|
+| NVIDIA Nemotron 3 | NVIDIA's open-weight MoE model family for agentic reasoning — Nano (30B/3B active), Super (~120B/12.7B active, 1M-token context), Ultra (550B/55B active); weights on Hugging Face under the NVIDIA Open Model License (commercial use OK). Paired with OpenCode, forms a local coding-agent stack that rivals paid coding agents. | [developer.nvidia.com/nemotron](https://developer.nvidia.com/nemotron) | `OSS` |
+| RF-DETR | Roboflow's real-time detection transformer (ICLR 2026) for object detection, instance segmentation, and keypoint detection on a DINOv2 backbone — SOTA on COCO/RF100-VL, designed for fine-tuning. Nano–Large weights and all code Apache-2.0; XL/2XL variants under Roboflow's PML license. | [github.com/roboflow/rf-detr](https://github.com/roboflow/rf-detr) | `OSS` |
 
 ## System & Dev Utilities
 
@@ -182,6 +203,7 @@ Local machine, infrastructure, and analytics tools.
 | docker-android | Docker image running Android emulators with noVNC and video recording — for Android app dev and native/web/hybrid testing (Appium, Espresso). | [github.com/budtmo/docker-android](https://github.com/budtmo/docker-android) | `OSS` |
 | Clicky | Open-source macOS menu-bar AI teaching assistant — sees your screen, takes push-to-talk voice, and points its cursor at on-screen UI elements to guide you through tasks. Built on Claude + AssemblyAI + ElevenLabs. | [github.com/farzaa/clicky](https://github.com/farzaa/clicky) | `OSS` `Free` |
 | Google Workspace (gws) | Google's cloud productivity suite (Gmail, Docs, Sheets, Drive, Calendar). Listed here for its MCP/Claude integrations that let agents read and write Workspace docs. | [workspace.google.com](https://workspace.google.com) | `SaaS` |
+| Supervision | Roboflow's model-agnostic Python library of reusable computer-vision utilities — a unified Detections API with connectors for Ultralytics/Transformers/SAM, plus annotators, object tracking, zone counting, and dataset tools. | [github.com/roboflow/supervision](https://github.com/roboflow/supervision) | `OSS` |
 
 ## Curated Lists
 
@@ -192,15 +214,15 @@ Meta-resources — lists worth mining for more tools.
 | awesome-opensource-ai | Curated list of battle-tested, production-proven, truly open-source AI projects, models, libraries, and dev tools. | [github.com/alvinreal/awesome-opensource-ai](https://github.com/alvinreal/awesome-opensource-ai) | `OSS` |
 | awesome-claude-code | Curated list of skills, hooks, slash-commands, agent orchestrators, and plugins for Claude Code. (Generic name — several competing repos.) | [github.com/hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | `OSS` |
 | awesome-design-md | Curated collection of 73+ DESIGN.md files extracted from major brand sites (Claude, Vercel, Airbnb, Tesla…). Drop one into a project so coding agents generate a matching UI. | [github.com/voltagent/awesome-design-md](https://github.com/voltagent/awesome-design-md) | `OSS` |
+| claude-fable-5.md (system-prompt collections) | Community-extracted system prompts for Anthropic's Claude Fable 5, mirrored in system-prompt-collection repos (asgeirtj/system_prompts_leaks, elder-plinius/CL4R1T4S). A reference document, not a tool; unofficial. | [github.com/asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) | `Free` |
 
 ---
 
 ## 🔄 How this catalog is maintained
 
-This catalog auto-updates from `raw.txt` via a Claude Code slash command.
+This catalog updates via a Claude Code slash command — new finds are passed directly in the prompt.
 
-1. **Drop new finds into [`raw.txt`](raw.txt)** — any format, one per line, partial names are fine.
-2. **Run `/update-tools`** in Claude Code from this directory.
-3. The command reads `raw.txt` and this `README.md`, figures out which entries are **not yet catalogued** (so it's safe to re-run), **web-researches** each new tool, classifies it into the scheme above, and inserts it into the right table. It then prints a summary of what changed.
+1. **Run `/update-tools <new finds>`** in Claude Code from this directory — any format, partial names, Korean/English hints, and URLs are all fine (e.g. `/update-tools Cognee (기억 향상), RF-DETR, https://github.com/owner/repo`).
+2. The command parses your input, checks this `README.md` for what's **not yet catalogued** (so it's safe to re-run), **web-researches** each new tool, classifies it into the scheme above, and inserts it into the right table. It then prints a summary of what changed.
 
 The command definition lives in [`.claude/commands/update-tools.md`](.claude/commands/update-tools.md).
