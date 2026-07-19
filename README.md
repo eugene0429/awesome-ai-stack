@@ -44,6 +44,7 @@ Tools for literature search, paper reading, academic writing, citations, and pee
 | Last30Days | Research agent/skill that searches Reddit, X, YouTube, HN, Polymarket, and the web over the past 30 days and synthesizes a sourced, weighted summary. | [github.com/mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | `OSS` `Skill` |
 | Apodex | Verification-first deep-research agent system orchestrating up to 150 sub-agents with fact-checker/conflict-reviewer roles and auditable evidence chains; ships Apache-2.0 open-weight models (Apodex-1.0, fine-tuned from Qwen3.5) and the AgentHarness eval harness. | [github.com/ApodexAI](https://github.com/ApodexAI) | `OSS` |
 | VERSES AI (AXIOM) | Best-guess match for raw note "Vercus (transformer replacement?)" — VERSES' Genius platform and AXIOM architecture use active inference (Free Energy Principle) as an explicit alternative to transformer-based models. Exact name "Vercus" not found; identity unconfirmed. ⚠️ | [verses.ai](https://www.verses.ai/) | `SaaS` `⚠️` |
+| WebPlotDigitizer | Free, open-source web tool that extracts numerical data from images of plots and graphs (line, bar, scatter) via axis calibration plus manual or automatic point detection; exports to CSV/JSON. | [github.com/ankitrohatgi/WebPlotDigitizer](https://github.com/ankitrohatgi/WebPlotDigitizer) | `OSS` `Free` |
 
 ## RAG & Knowledge Management
 
@@ -56,6 +57,7 @@ Frameworks that turn documents, code, or media into queryable knowledge.
 | Graphify | Skill that turns any folder of code/docs/papers/media into a queryable knowledge graph (Tree-sitter + NetworkX + Leiden), with Obsidian-compatible output. | [github.com/safishamsi/graphify](https://github.com/safishamsi/graphify) | `OSS` `Skill` |
 | HelixDB | Open-source graph-vector database built in Rust (LMDB-backed) with a typed query language (HelixQL), combining graph traversal and vector search for RAG and agent memory. | [github.com/HelixDB/helix-db](https://github.com/HelixDB/helix-db) | `OSS` |
 | cognee | Open-source AI memory engine giving agents persistent long-term memory — builds a self-hosted knowledge graph combining vector embeddings, graph reasoning, and ontology generation (remember/recall/forget operations). | [github.com/topoteretes/cognee](https://github.com/topoteretes/cognee) | `OSS` |
+| Repowise | Open-source (AGPL-3.0) codebase-intelligence tool that indexes a repo's AST, dependency graph, and git history to produce code-health scores, auto-generated architecture docs/wiki, dead-code detection, and nine MCP tools for AI coding agents. Positioned as an open-source CodeScene alternative. | [github.com/repowise-dev/repowise](https://github.com/repowise-dev/repowise) | `OSS` |
 
 ## LLM Optimization & Local Inference
 
@@ -67,6 +69,8 @@ Run bigger models on smaller hardware; compression and efficient inference.
 | ntransformer | Dependency-free C++/CUDA engine running Llama 3.1 70B on a single RTX 3090 via 3-tier adaptive caching (VRAM + RAM + NVMe). Trades speed for fit. | [github.com/xaskasdf/ntransformer](https://github.com/xaskasdf/ntransformer) | `OSS` |
 | Turbovec | Rust vector index (Python bindings) implementing TurboQuant — training-free 2–4 bit vector compression with SIMD nearest-neighbor search for local RAG. | [github.com/RyanCodrai/turbovec](https://github.com/RyanCodrai/turbovec) | `OSS` |
 | AirLLM | Layer-by-layer sharding so a 70B model runs on a single 4GB GPU (405B on 8GB) with no quantization/distillation. | [github.com/lyogavin/airllm](https://github.com/lyogavin/airllm) | `OSS` |
+| Colibri | Minimal, dependency-free pure-C inference engine that runs a 744B-parameter GLM MoE model on consumer machines with as little as 25GB RAM by streaming experts from disk; exposes an OpenAI-compatible HTTP API. | [github.com/JustVugg/colibri](https://github.com/JustVugg/colibri) | `OSS` |
+| pxpipe | Local proxy (TypeScript, MIT) that intercepts LLM API calls and renders bulky text blocks (code, JSON, tool output) as compact PNG images before forwarding, cutting token costs ~59–70%. Lossy — unreliable for exact strings/hashes/secrets. | [github.com/teamchong/pxpipe](https://github.com/teamchong/pxpipe) | `OSS` `Free` |
 
 ## Agent Frameworks & Multi-Agent Systems
 
@@ -82,6 +86,7 @@ Building, training, and orchestrating autonomous and swarm agents.
 | LLM Council | Andrej Karpathy's web app where several LLMs answer a query, anonymously peer-review each other's responses, and a "chairman" model synthesizes the final answer. | [github.com/karpathy/llm-council](https://github.com/karpathy/llm-council) | `OSS` `Free` |
 | Strix | Open-source autonomous AI penetration-testing agents that run your app, find vulnerabilities (XSS, auth bypass…), validate them with proof-of-concept exploits, and can auto-generate fix PRs; integrates with CI/CD, GitHub/GitLab, Slack/Jira. | [github.com/usestrix/strix](https://github.com/usestrix/strix) | `OSS` |
 | OpenCode | Popular open-source, provider-agnostic AI coding agent for the terminal — works with Claude, OpenAI, Google, or local models. Formerly `sst/opencode`; pairs well with open models like Nemotron 3 for fully local agent stacks. | [github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) | `OSS` `Free` |
+| jcode | Terminal AI coding-agent harness (Rust) with fast boot (~14ms), low RAM, semantic/vector memory, native multi-agent "swarm" subagent delegation, and 30+ LLM providers. | [github.com/1jehuang/jcode](https://github.com/1jehuang/jcode) | `OSS` |
 
 ## Claude Code Skills & Plugins
 
@@ -109,6 +114,7 @@ Skills, plugins, and tooling that extend Claude Code (and other AI coding agents
 | context-engineering-kit | Skill kit for managing an agent's context window — structuring prompts, curating what enters context, and improving result quality across long sessions. | [github.com/NeoLabHQ/context-engineering-kit](https://github.com/NeoLabHQ/context-engineering-kit) | `OSS` `Skill` |
 | Ponytail | Skill/plugin that makes coding agents "think like the laziest senior dev" — a decision ladder (skip → reuse → stdlib → native → one-liner → minimal code) that cuts generated code volume (~54% fewer LOC per its benchmarks) while keeping safety guardrails. | [github.com/DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | `OSS` `Skill` |
 | obsidian-skills | Official Agent Skills for Obsidian by its CEO Steph Ango (kepano) — teaches agents the Obsidian CLI and open formats (Markdown/wikilinks, Bases, JSON Canvas) plus Defuddle web clipping; installable as a Claude Code plugin. | [github.com/kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | `OSS` `Skill` |
+| Herdr | Terminal-native "agent multiplexer" (Rust, single ~10MB binary) — think tmux rebuilt for AI coding agents; gives each agent (Claude Code, Codex, Copilot CLI, Cursor Agent, 15+ others) a real terminal pane with automatic idle/working/blocked/done state detection. | [github.com/ogulcancelik/herdr](https://github.com/ogulcancelik/herdr) | `OSS` |
 
 ## Creative & Media Generation
 
@@ -137,6 +143,14 @@ Text/image-to-CAD and engineering copilots.
 | Adam (adam.new) | AI CAD copilot generating parametric 3D models from text/images in seconds; exports STEP/STL/OBJ. (YC W25; see CADAM for its OSS component.) | [adam.new](https://adam.new/) | `SaaS` |
 | MecAgent | AI CAD copilot integrating with SolidWorks, CATIA, Inventor, Fusion 360, Creo — generates parts from text, runs standards checks, estimates cost. | [mecagent.com](https://mecagent.com/) | `SaaS` |
 | CADAM | Open-source text-to-CAD web app behind Adam — natural language/images → parametric models via OpenSCAD, in-browser via WebAssembly; exports STL/SCAD/DXF. | [github.com/Adam-CAD/CADAM](https://github.com/Adam-CAD/CADAM) | `OSS` |
+| McMaster-Carr | Large US industrial-hardware supplier (595,000+ products) with a renowned website; relevant to CAD because it offers downloadable feature-rich 3D/2D CAD models (STEP, SLDPRT, Parasolid…) for 700,000+ parts, plus a SolidWorks add-in. | [mcmaster.com](https://www.mcmaster.com/) | `SaaS` `Free` |
+| SimScale | Cloud-native computer-aided engineering (CAE) platform for running CFD, FEA, thermal, and electromagnetics simulations entirely in the browser — no local hardware or install; now positioned as an AI-native/agentic simulation platform. | [simscale.com](https://www.simscale.com/) | `SaaS` |
+| OpenRocket | Free, open-source model-rocketry design tool with full six-degrees-of-freedom aerodynamics and trajectory simulation; design and fly rockets virtually before building. Java, GPL. | [github.com/openrocket/openrocket](https://github.com/openrocket/openrocket) | `OSS` `Free` |
+| ParaView | Open-source, multi-platform scientific data-analysis and visualization application built on VTK (developed by Kitware with Sandia/Los Alamos); handles large-scale datasets. BSD 3-clause. | [paraview.org](https://www.paraview.org/) | `OSS` `Free` |
+| OpenFOAM | Free, open-source C++ toolbox for computational fluid dynamics (CFD) — solvers and pre-/post-processing for fluid flow, turbulence, heat transfer, reactions, acoustics, and more. GPLv3 (ESI and Foundation distributions). | [openfoam.com](https://www.openfoam.com/) | `OSS` `Free` |
+| NASA GMAT | NASA's open-source, multi-mission software for spacecraft mission design, trajectory optimization, and navigation — from low Earth orbit to lunar, libration-point, and deep-space missions. NASA Open Source Agreement. | [github.com/nasa/GMAT](https://github.com/nasa/GMAT) | `OSS` `Free` |
+| NASA CEA | NASA Glenn program that computes chemical-equilibrium compositions and thermodynamic/transport properties via free-energy minimization — used for theoretical rocket performance (c*, Isp), detonations, and shock analysis, over a 2000+ species database. | [github.com/nasa/cea](https://github.com/nasa/cea) | `OSS` `Free` |
+| F´ (F Prime) | NASA JPL's open-source, component-driven flight-software and embedded-systems framework (C++) for spaceflight — flies on the Mars Ingenuity helicopter, CADRE lunar rovers, and Europa Clipper. | [github.com/nasa/fprime](https://github.com/nasa/fprime) | `OSS` `Free` |
 
 ## Business, Marketing & Career
 
@@ -164,6 +178,7 @@ Turning the web into data and driving browsers programmatically.
 | Firecrawl | API/toolkit for scraping, crawling, and searching the web — turns sites into LLM-ready clean markdown / structured data. | [github.com/firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | `OSS` |
 | Playwright | Microsoft's cross-browser automation library for end-to-end testing and programmatic browser control. | [playwright.dev](https://playwright.dev) | `OSS` |
 | Perplexity (ppl-ai) | AI answer engine / conversational search. `ppl-ai` is Perplexity's GitHub org; public OSS (pplx-garden, pplx-kernels) lives under `perplexityai`. | [perplexity.ai](https://www.perplexity.ai/) | `SaaS` |
+| Scrapling | High-performance, adaptive Python web-scraping library with built-in stealth/anti-bot bypassing (e.g. Cloudflare Turnstile), adaptive element tracking that survives site-structure changes, three fetching strategies, and a spider framework. | [github.com/D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | `OSS` |
 
 ## UI / Web Design
 
@@ -177,6 +192,7 @@ Design-intelligence skills and resources for building better interfaces.
 | UI/UX Pro Max | Design-intelligence skill: searchable database of styles, palettes, font pairings, UX guidelines, and charts across stacks, with a CLI to generate design systems. | [github.com/nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | `OSS` `Skill` |
 | huashu-design | HTML-native design skill (inspired by Claude Design) — turns a sentence into high-fidelity prototypes, decks, animations, infographics; MP4/PPTX export. | [github.com/alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | `OSS` `Skill` |
 | ai-website-cloner-template | GitHub template that clones any website with one `/clone-website` command — screenshots the target via a browser extension, extracts design tokens/components, dispatches parallel builder agents, and reconstructs it in Next.js/React/Tailwind with diff-fixing against the original. | [github.com/JCodesMore/ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) | `OSS` `Skill` |
+| Scroll World | Agent skill (SKILL.md for Claude Code/Codex) that turns a brand into a scrollable Apple-style 3D-world landing page — one continuous camera flight through generated isometric diorama scenes (Higgsfield + Seedance/Kling image-to-video) scrubbed by scroll position. | [github.com/oso95/scroll-world](https://github.com/oso95/scroll-world) | `OSS` `Skill` |
 
 ## Datasets
 
@@ -204,6 +220,7 @@ Local machine, infrastructure, and analytics tools.
 | Clicky | Open-source macOS menu-bar AI teaching assistant — sees your screen, takes push-to-talk voice, and points its cursor at on-screen UI elements to guide you through tasks. Built on Claude + AssemblyAI + ElevenLabs. | [github.com/farzaa/clicky](https://github.com/farzaa/clicky) | `OSS` `Free` |
 | Google Workspace (gws) | Google's cloud productivity suite (Gmail, Docs, Sheets, Drive, Calendar). Listed here for its MCP/Claude integrations that let agents read and write Workspace docs. | [workspace.google.com](https://workspace.google.com) | `SaaS` |
 | Supervision | Roboflow's model-agnostic Python library of reusable computer-vision utilities — a unified Detections API with connectors for Ultralytics/Transformers/SAM, plus annotators, object tracking, zone counting, and dataset tools. | [github.com/roboflow/supervision](https://github.com/roboflow/supervision) | `OSS` |
+| OmniRoute | Free, open-source (MIT, TypeScript) AI gateway/router exposing one OpenAI-compatible endpoint over 200+ LLM providers, with multi-tier auto-fallback, multiple routing strategies, token compression, and MCP support; connects Claude Code, Cursor, Cline. | [github.com/diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | `OSS` `Free` |
 
 ## Curated Lists
 
