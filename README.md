@@ -132,6 +132,7 @@ Image, video, 3D, animation, motion capture, and visual generation.
 | Higgsfield + Seedance 2.0 | Higgsfield is an AI video/image platform aggregating many models; Seedance 2.0 is ByteDance's multimodal video model (multi-shot, synced audio, lip-sync). | [higgsfield.ai](https://higgsfield.ai/) | `SaaS` |
 | LingBot-Map | Feed-forward 3D foundation model for real-time streaming scene reconstruction from a single RGB camera (~20 FPS, no LiDAR/depth). | [github.com/robbyant/lingbot-map](https://github.com/robbyant/lingbot-map) | `OSS` |
 | Remotion Skill | Agent skill teaching AI coding agents to write correct Remotion code — Remotion being the open-source React framework for making videos programmatically (React components → MP4/WebM/GIF). | [remotion.dev/docs/ai/skills](https://www.remotion.dev/docs/ai/skills) | `OSS` `Skill` |
+| CharaVox | AI voice generation SaaS — character voices, voice cloning, and studio-quality TTS in 6 languages (en/zh/ja/ko/es/pt); role-specific voice pages for support/sales/podcast/game-character use cases. Powered by open-source VoxCPM. | [charavox.com](https://charavox.com/) | `SaaS` `Free` |
 
 ## CAD & Engineering
 
