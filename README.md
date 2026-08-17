@@ -131,6 +131,7 @@ Image, video, 3D, animation, motion capture, and visual generation.
 | Manus | General-purpose autonomous AI agent; its slides module researches, structures, and designs a full PowerPoint deck from a prompt (.pptx/PDF/web). | [manus.im](https://manus.im/) | `SaaS` |
 | Higgsfield + Seedance 2.0 | Higgsfield is an AI video/image platform aggregating many models; Seedance 2.0 is ByteDance's multimodal video model (multi-shot, synced audio, lip-sync). | [higgsfield.ai](https://higgsfield.ai/) | `SaaS` |
 | LingBot-Map | Feed-forward 3D foundation model for real-time streaming scene reconstruction from a single RGB camera (~20 FPS, no LiDAR/depth). | [github.com/robbyant/lingbot-map](https://github.com/robbyant/lingbot-map) | `OSS` |
+| OrkasVideoStudio | Local-first TypeScript CLI, MCP server, and skill pack for composing, editing, generating, and assembling videos from editable `plan.json` timelines. | [github.com/Orkas-AI/Orkas-VideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) | `OSS` `Skill` `Free` |
 | Remotion Skill | Agent skill teaching AI coding agents to write correct Remotion code — Remotion being the open-source React framework for making videos programmatically (React components → MP4/WebM/GIF). | [remotion.dev/docs/ai/skills](https://www.remotion.dev/docs/ai/skills) | `OSS` `Skill` |
 
 ## CAD & Engineering
