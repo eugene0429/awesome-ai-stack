@@ -28,10 +28,11 @@ For each researched tool, decide placement:
 - **FOUND / UNCERTAIN** → add a row to the single best-fitting category table below. If UNCERTAIN, still place it in the best category but note the uncertainty in the description and add the `` `⚠️` `` tag.
 
 **Categories** (use the existing section that fits best; only create a new `##` section if a tool genuinely fits none):
-`Research & Academic` · `RAG & Knowledge Management` · `LLM Optimization & Local Inference` · `Agent Frameworks & Multi-Agent Systems` · `Claude Code Skills & Plugins` · `Creative & Media Generation` · `CAD & Engineering` · `Business, Marketing & Career` · `Web Scraping & Browser Automation` · `UI / Web Design` · `Datasets` · `Open Models` · `System & Dev Utilities` · `Curated Lists`
+`Research & Academic` · `RAG & Knowledge Management` · `Document Parsing & OCR` · `LLM Optimization & Local Inference` · `Agent Frameworks & Multi-Agent Systems` · `Coding Agents & Dev Workflow` · `Skill & MCP Tooling` · `Security & Offensive Testing` · `Video & Audio` · `Creative & Media Generation` · `CAD & Engineering` · `Business, Marketing & Career` · `Finance & Trading` · `Web Scraping & Browser Automation` · `UI / Web Design` · `Writing, Learning & Communication` · `Datasets` · `Open Models` · `System & Dev Utilities` · `Curated Lists`
 
 Placement rules of thumb:
-- Classify by **primary domain/function**. A Claude Code skill with a strong domain (e.g. a marketing skill) goes in its domain section with a `` `Skill` `` tag; only tools whose primary identity *is* "a Claude Code skill/plugin" (memory, orchestration, spec frameworks, IDE plugins) go in **Claude Code Skills & Plugins**.
+- Classify by **primary domain/function**, never by delivery format. There is deliberately **no "Claude Code skills" section** — a skill goes wherever its subject matter lives (a marketing skill under marketing, a video skill under video, a trading skill under finance) and carries the `` `Skill` `` tag there.
+- Only tools whose subject matter genuinely *is* the agent-development layer split between two sections: **Coding Agents & Dev Workflow** (harnesses, memory, spec-driven dev, context engineering, agent multiplexers) and **Skill & MCP Tooling** (creating, optimizing, discovering, or packaging skills and MCP servers).
 - Open-weight models (LLMs, vision models…) whose identity is "a model you download and run" go in **Open Models**; a domain-specific model with one clear use case (e.g. SAM 3D) goes in its domain section instead.
 
 **Row format** (match the existing tables exactly):
